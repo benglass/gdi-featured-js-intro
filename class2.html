@@ -237,10 +237,77 @@ console.log(awesomeGroup + ' is pretty awesome.'); // Won't work
         <section>
           <h3>Boolean Variables</h3>
           <p>Boolean variables represent the logical values <code>true</code> and <code>false</code></p>
-<pre><code class="javascript">var catsAreBest = true;
-var dogsRule = false;
+<pre><code class="javascript">var areCatsBest = true;
+var areDogsBest = false;
 </code></pre>
         </section>
+
+        <section>
+          <h3>Comparison Operators</h3>
+          <table class="smalltext">
+            <thead>
+              <tr>
+                <th>Example</th>
+                <th>Name</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>a == b</code></td>
+                <td>Equal</td>
+                <td><strong><code>true</code></strong> if <code>a</code> is equal to <code>b</code> (can be different types).</td>
+              </tr>
+              <tr>
+                <td><code>a === b</code></td>
+                <td>Identical</td>
+                <td>
+              <strong><code>true</code></strong> if <code>a</code> is equal to <code>b</code>, and the same type. </td>
+              </tr>
+              <tr>
+                <td><code>a != b</code></td>
+                <td>Not equal</td>
+                <td><strong><code>true</code></strong> if <code>a</code> is not equal to <code>b</code> (can be different types).</td>
+              </tr>
+              <tr>
+                <td><code>a !== b</code></td>
+                <td>Not identical</td>
+                <td><strong><code>true</code></strong> if <code>a</code> is not equal to <code>b</code>, or they are not the same type.</td>
+              </tr>
+              <tr>
+                <td><code>a &lt; b</code></td>
+                <td>Less than</td>
+                <td><strong><code>true</code></strong> if <code>a</code> is strictly less than <code>b</code>.</td>
+              </tr>
+              <tr>
+                <td><code>a &gt; b</code></td>
+                <td>Greater than</td>
+                <td><strong><code>true</code></strong> if <code>a</code> is strictly greater than <code>b</code>.</td>
+              </tr>
+              <tr>
+                <td><code>a &lt;= b</code></td>
+                <td>Less than or equal to </td>
+                <td><strong><code>true</code></strong> if <code>a</code> is less than or equal to <code>b</code>.</td>
+              </tr>
+              <tr>
+                <td><code>a &gt;= b</code></td>
+                <td>Greater than or equal to </td>
+                <td><strong><code>true</code></strong> if <code>a</code> is greater than or equal to <code>b</code>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h3>Boolean Values</h3>
+          <p>Comparison Operators result in a <strong>Boolean</strong> value.</p>
+<pre><code class="javascript">var areCatsBest = true;
+var areDogsBest = !areCatsBest; // false
+var areDogsBest = areCatsBest === false; // also false
+var areDogsBest = areCatsBest !== true; // tambien falso
+</code></pre>
+        </section>
+
         <section>
           <h3>Boolean Variables</h3>
           <p>Some values are considered <code><a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">falsy</a></code> and will evaluate to <code>false</code> in a Boolean context.</p>
@@ -272,62 +339,6 @@ var isMarried;     // remember a variable with no value is undefined</code></pre
 if (age &gt; 18) {
   console.log('You are an adult');
 }</code></pre>
-        </section>
-
-        <section>
-          <h3>Comparison Operators</h3>
-          <table class="smalltext">
-            <thead>
-              <tr>
-                <th>Example</th>
-                <th>Name</th>
-                <th>Result</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><code>a == b</code></td>
-                <td>Equal</td>
-                <td><strong><code>TRUE</code></strong> if <code>a</code> is equal to <code>b</code> (can be different types).</td>
-              </tr>
-              <tr>
-                <td><code>a === b</code></td>
-                <td>Identical</td>
-                <td>
-              <strong><code>TRUE</code></strong> if <code>a</code> is equal to <code>b</code>, and the same type. </td>
-              </tr>
-              <tr>
-                <td><code>a != b</code></td>
-                <td>Not equal</td>
-                <td><strong><code>TRUE</code></strong> if <code>a</code> is not equal to <code>b</code> (can be different types).</td>
-              </tr>
-              <tr>
-                <td><code>a !== b</code></td>
-                <td>Not identical</td>
-                <td><strong><code>TRUE</code></strong> if <code>a</code> is not equal to <code>b</code>, or they are not the same type.</td>
-              </tr>
-              <tr>
-                <td><code>a &lt; b</code></td>
-                <td>Less than</td>
-                <td><strong><code>TRUE</code></strong> if <code>a</code> is strictly less than <code>b</code>.</td>
-              </tr>
-              <tr>
-                <td><code>a &gt; b</code></td>
-                <td>Greater than</td>
-                <td><strong><code>TRUE</code></strong> if <code>a</code> is strictly greater than <code>b</code>.</td>
-              </tr>
-              <tr>
-                <td><code>a &lt;= b</code></td>
-                <td>Less than or equal to </td>
-                <td><strong><code>TRUE</code></strong> if <code>a</code> is less than or equal to <code>b</code>.</td>
-              </tr>
-              <tr>
-                <td><code>a &gt;= b</code></td>
-                <td>Greater than or equal to </td>
-                <td><strong><code>TRUE</code></strong> if <code>a</code> is greater than or equal to <code>b</code>.</td>
-              </tr>
-            </tbody>
-          </table>
         </section>
 
         <section>
