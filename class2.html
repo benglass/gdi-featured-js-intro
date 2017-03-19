@@ -77,7 +77,7 @@ console.log(receipt);
       <!-- Functions -->
         <section>
           <h3>Functions</h3>
-          <p>Functions are separable, reusable pieces of code.
+          <p>Functions are reusable pieces of code.</p>
           <img src="img/legos.jpg" alt="Pile of legos"/>
           <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/catzrule/9940388305/">Rick Payette</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
         </section>
@@ -95,15 +95,23 @@ console.log(receipt);
 
         <section>
           <h3>Using Functions</h3>
-          <p>To invoke (use) a function, you type its name, followed by parenthesis <code>()</code></p>
+          <p>To run the code inside a function, you type its name, followed by parenthesis <code>()</code>. </p>
 <pre><code class="javascript"> parrotFacts();</code></pre>
-          <p>We'll talk about what can go inside those parenthesis in a minute! For now, leave them empty.</p>
+            <p>This is referred to as <strong>calling</strong> or <strong>invoking</strong> the function.<br />We'll talk about what can go inside those parenthesis in a minute! For now, leave them empty.</p>
         </section>
 
         <section>
           <h3>What's going on here?</h3>
-          <p>A function is a group of code you can reuse many times. Whenever you invoke a function by using it's name, you tell the browser to run the code inside the function.</p>
+          <p>A function is a block of code you can reuse many times. Whenever you invoke a function, you tell the browser to run the code inside the function.</p>
           <p>You must declare a function before you can use it.</p>
+<pre><code class="javascript">function sayHello() {
+  console.log('Hello!');
+}
+// What will I see in the console after this code runs?
+</code></pre>
+<pre class="fragment"><code class="javascript">sayHello();
+// How about now?
+</pre></code>
         </section>
 
         <section>
