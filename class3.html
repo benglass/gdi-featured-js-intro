@@ -350,12 +350,13 @@ describeUser(jolene);</code></pre>
           <p>Objects can also hold functions.</p>
 <pre><code class="javascript">var jolene = {
   age: 21,
+  name: 'Jolene',
   hairColor: 'Auburn',
   talk: function() {
     console.log('Hello!');
   },
   eat: function(food) {
-    console.log('Yum, I love ' + food);
+    console.log(this.name + ' eats some ' + food);
   }
 };
 </code></pre><br>
