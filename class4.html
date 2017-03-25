@@ -206,6 +206,17 @@ imgKitten.setAttribute('src', 'http://placekitten.com/g/600/500');</code></pre>
           </section>
 
           <section>
+          <h3>Adding and Removing a Class</h3>
+          <p>You can change the style of an element by adding or removing a class with some CSS associated.</p>
+          <pre><code class="css">.highlight { background-color: yellow; }
+</code></pre>
+          <pre><code class="javascript">var myCatElement = document.querySelector('#my-cat');
+myCatElement.className = 'highlight'; // Add highlight class
+myCatElement.className = ''; // Remove highlight class
+</code></pre>
+          </section>
+
+          <section>
           <h3>Let's Develop It</h3>
           <p>Create a simple HTML page or <a href="files/class4.zip">use this sample code</a>.</p>
           <p>Isolate a element (an element on the page) and change an attribute or add a new style.</p>
