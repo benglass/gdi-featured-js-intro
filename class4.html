@@ -145,7 +145,7 @@
           </section>
 
           <section>
-            <h3>DOM Access: By Id</h3>
+            <h3>Finding Elements By Id</h3>
             <p>You can find nodes by <code>id</code> using the method:</p>
 <pre><code class="javascript">document.getElementById(id);
 </code></pre>
@@ -158,34 +158,13 @@
           </section>
 
           <section>
-            <h3>DOM Access: By Tag Name</h3>
-            <p>You can also get HTML elements by their <code>tag</code> using this method:</p>
-<pre><code class="javascript">document.getElementsByTagName(tagName);
-</code></pre>
-            <p>To find:</p>
-<pre><code class="html">&lt;ul&gt;
-  &lt;li&gt;Daisy&lt;/li&gt;
-  &lt;li&gt;Tulip&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-            <p>We would use:</p>
-<pre><code class="javascript">var listItems = document.getElementsByTagName('li');
-
-for (var i = 0; i &lt; listItems.length; i++) {
-  var listItem = listItems[i];
-}
-</code></pre>
-          </section>
-
-          <section>
-            <h3>DOM Access: HTML 5</h3>
-            <p>In newer browsers, you can use methods <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName">getElementsByClassName</a></code>, <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector</a></code>, and <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">querySelectorAll</a></code>.</p><br>
-            <p>Available in <a href="http://caniuse.com/#search=getElementsByClassName">IE9+, FF3.6+, Chrome 17+, Safari 5+</a>:</p>
-<pre><code class="javascript">document.getElementsByClassName(className);
-</code></pre><br>
-          <p>Available in <a href="http://caniuse.com/#search=querySelectorAll">IE8+, FF3.6+, Chrome 17+, Safari 5+</a>:</p>
-<pre><code class="javascript">document.querySelector(cssQuery);
-document.querySelectorAll(cssQuery);
-</code></pre>
+              <h3>Finding Elements<br />with CSS Selectors</h3>
+              <pre><code class="javascript">document.querySelector(cssSelector);
+document.querySelectorAll(cssSelector); // Whats the difference?</code></pre>
+              <p class="fragment">How would we find a single element with id my-kat?</p>
+<pre class="fragment"><code class="javascript">document.querySelector('#my-cat');</code></pre>
+            <p class="fragment">How about all elements with a class of cats?</p>
+<pre class="fragment"><code class="javascript">document.querySelectorAll('.cats');</code></pre>
           </section>
 
           <section>
