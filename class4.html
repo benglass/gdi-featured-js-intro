@@ -167,18 +167,6 @@ document.querySelectorAll(cssSelector); // Whats the difference?</code></pre>
 <pre class="fragment"><code class="javascript">document.querySelectorAll('.cats');</code></pre>
           </section>
 
-          <section>
-            <h3>getElement vs. getElements</h3>
-            <p>Any method that starts with <code>getElement</code> will return a <strong>single</strong> element.</p>
-<pre><code class="javascript">document.getElementById('uniqueID'); // returns a single element
-</code></pre><br>
-          <p>Any method that starts with <code>getElements</code> will return an <strong>array</strong> of elements. To modify a single element, you will need to use bracket notation to get the correct one.</p>
-<pre><code class="javascript">document.getElementsByTagName('p'); // returns multiple elements
-
-var specificParagraph = document.getElementsByTagName('p')[2];
-</code></pre>
-          </section>
-
         <!--Manipulating the DOM-->
           <section>
             <h3>Changing Elements</h3>
