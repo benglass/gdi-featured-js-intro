@@ -435,16 +435,16 @@ for (var i = 0; i &lt; length; i++) {
         </section>
 
         <section>
-          <h3>Submit buttons</h3>
-          <p>If you are going to retrieve form values with the submit button, be sure to prevent the default action!</p>
-<pre><code class="javascript">var submitButton = document.getElementById('submitBtn');
+          <h3>Form Submission</h3>
+          <p>If you want to handle the submission of a form yourself instead of sending the data to the server, you will want to prevent the default behavior.</p>
+<pre><code class="javascript">var myForm = document.getElementById('myForm');
+var firstName = document.getElementById('firstName');
 
-submitButton.addEventListener("click", function(event) {
+myForm.addEventListener("submit", function(event) {
   event.preventDefault();
 
-  var name = document.getElementById('firstName').value;
-  console.log(name);
-})
+  console.log(firstName.value);
+});
 </code></pre>
         </section>
 
