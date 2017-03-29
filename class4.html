@@ -456,7 +456,7 @@ myButton.addEventListener("click", function(event) {
 <pre><code class="html">&lt;a href="http://girldevelopit.com/" id="gdiLink"&gt;Girl Develop It&lt;/a&gt;
 </code></pre>
           <p>When a user clicks the link, print the value of the href attribute instead of going to the Girl Develop It homepage.</p>
-          <p><strong>Bonus:</strong> Use the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/open">window.open</a> method to open the href in a new browser window/tab.</p>
+          <p><strong>Bonus</strong> Use the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/open">window.open</a> method to open the href in a new browser window/tab.</p>
         </section>
 
       <!-- User input -->
@@ -515,6 +515,24 @@ myForm.addEventListener("submit", function(event) {
   event.preventDefault();
 
   console.log(firstName.value);
+});
+</code></pre>
+        </section>
+
+        <section>
+          <h3>jQuery</h3>
+          <p><a href="http://jquery.com/">jQuery</a> is a utility library written in javascript which makes common tasks more convenient.</p>
+<pre><code class="javascript">var $form = jQuery('.my-form');
+$form.on('submit', function() {
+    console.log('Form submitted!');
+});
+
+jQuery('#content').append('<p>Another paragraph!</p>');
+
+jQuery('.header').toggleClass('my-new-class');
+
+$('#slideshow').carousel({
+    autoPlay: true
 });
 </code></pre>
         </section>
