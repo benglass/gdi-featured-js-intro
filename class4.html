@@ -337,9 +337,12 @@ pageBody.appendChild(newParagraph);</code></pre>
     &lt;head&gt;
         &lt;script&gt;
             document.body.innerHTML += '<p>Hey!</p>';
+            var myImg = document.querySelector('.my-img');
+            myImg.setAttribute('src', 'betterdog.jpg');
         &lt;/script&gt;
     &lt;/head&gt;
     &lt;body&gt;
+        &lt;img class="my-img" src="dog.jpg" /&gt;
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -358,6 +361,22 @@ pageBody.appendChild(newParagraph);</code></pre>
 });</code></pre>
         </div>
         </section>
+
+        <section>
+          <h3>Another Approach</h3>
+          <p>Moving your script to right before the closing &lt;/body&gt; tag will also work.</p>
+<pre><code class="html">&lt;html&gt;
+    &lt;head&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script&gt;
+            document.body.innerHTML += '<p>Hey!</p>';
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        </section>
+
 
 
           <section>
